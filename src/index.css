@@ -1,13 +1,242 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+    font-size: 10px;
+}
+
+body{
+    margin: 0 auto;
+    width: 80%;
+    font-family: 'Poppins', sans-serif; 
+    background-image: url("./images/pexels-pixabay-159020.jpg");
+    object-fit: cover;
+}
+
+.weather-info{
+    background-color: #f05858;
+    box-shadow: 0px 2px 4px 0px ;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+    position: relative;
+}
+
+.card{
+    background-color: #1772a7;
+    box-shadow: 0px 2px 4px 0px ;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 30px;
+    width: 600px;
+    position: relative;
+}
+
+.card p{
+    font-size: 20px;
+}
+
+.card img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 2px;
+    top: 1px;
+}
+
+.card h2{
+    font-size: 20px;
+
+}
+
+.container{
+    display: flex;
+}
+
+
+.form-group{
+    display: flex;
+    /* justify-content: space-evenly; */
+    width: 800%;
+}
+
+.form-group input{
+    width: 300px;
+    padding: 10px 0 10px 5px;
+    outline: none;
+    margin-left:300px;
+    border-radius: 0px;
+    font-weight: 700;
+}
+
+.form-group button{
+    margin-left: 10px;
+    border-radius: 0px;
+    padding:10px;
+    background-color:#1772a7;
+    color: #fff;
+    /* border:2px solid black; */
+    cursor: pointer;
+}
+
+
+
+.clip{
+    position: absolute;
+    top: 200px;
+    left: 600px;
+
+}
+
+.bar{
+    margin-top: 20px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 30px;
+    color: black;
+    background-color: #f05858;
+}
+
+a:hover{
+    color: #fff;
+}
+
+.footer-container{
+    display: flex;
+}
+
+.footer-container h3{
+    font-size: 20px;
+    margin:0px 30px 0 450px;
+}
+
+@media screen and (max-width:500px) {
+
+    .form-group{
+        flex-direction: column;
+    }
+
+    .form-group{
+        display: flex;
+        /* justify-content: space-evenly; */
+        width: 100%;
+    }
+    
+    .form-group input{
+        width: 280px;
+        margin-left:0px;
+    }
+    
+    .form-group button{
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .card{
+        padding: 20px;
+        margin: 20px;
+        width: 200px;
+        position: relative;
+    }
+    
+    .card p{
+        margin-top: 40px;
+    }
+    
+    .card img{
+        margin: 10px 0px 0px ;
+        right: 100px;
+        top: 1px;
+    }
+
+    .clip{
+        top: 200px;
+        left: 170px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-container h3{
+        margin: 0px 30px 5px 100px;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:768px){
+
+    .weather-info{
+        width: 450px;
+    }
+    .form-group{
+        flex-direction: column;
+    }
+
+    .form-group{
+        display: flex;
+        /* justify-content: space-evenly; */
+        width: 100%;
+    }
+    
+    .form-group input{
+        width: 430px;
+        margin-left:0px;
+    }
+    
+    .form-group button{
+        margin-left: 0px;
+        margin-top: 10px;
+        width: 440px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .card{
+        padding: 20px;
+        margin: 10px 0;
+        width: 400px;
+        position: relative;
+    }
+    
+    .card p{
+        margin-top: 40px;
+    }
+    
+    .card img{
+        margin: 10px 0px 0px ;
+        right: 20px;
+        top: 1px;
+    }
+
+    .clip{
+        top: 200px;
+        left: 250px;
+    }
+
+    .footer-container{
+        flex-direction: column;
+    }
+
+    .footer-container h3{
+        margin: 0px 180px 5px;
+    }  
+
+    a{
+        text-align: center;
+    }
 }

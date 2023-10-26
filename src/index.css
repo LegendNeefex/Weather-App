@@ -96,6 +96,7 @@ body{
 
 .bar{
     margin-top: 20px;
+    overflow: hidden;
 }
 
 a{
@@ -199,6 +200,11 @@ a:hover{
     a:hover{
         color:#000; 
     }
+
+    .bar{
+        padding-bottom: 20px;
+        overflow: hidden;
+    }
 }
 
 @media screen and (min-width:501px) and (max-width:768px){
@@ -283,5 +289,10 @@ a:hover{
 
     a:hover{
         color:#000; 
+    }
+
+    .bar{
+        padding-bottom: 20px;
+        overflow: hidden;
     }
 }

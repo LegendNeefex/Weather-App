@@ -98,6 +98,7 @@ export const ApiProvider = ({children})=>{
     ClipLoader,
     BarLoader,
     imageStyle,
+    text,
 
   }
 

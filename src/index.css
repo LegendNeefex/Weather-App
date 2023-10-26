@@ -121,23 +121,33 @@ a:hover{
 
 @media screen and (max-width:500px) {
 
-    .form-group{
-        flex-direction: column;
+    body{
+        margin: 0px;
+        width: 100%;
+    }
+
+    .weather-info{
+        width: 350px;
+        margin: 20px;
+        padding: 0px;
     }
 
     .form-group{
+        flex-direction: column;
         display: flex;
         /* justify-content: space-evenly; */
         width: 100%;
     }
     
     .form-group input{
-        width: 280px;
-        margin-left:0px;
+        width: 320px;
+        margin-left:10px;
+        margin-top: 20px;
     }
     
     .form-group button{
-        margin-left: 0px;
+        width: 330px;
+        margin-left:10px;
         margin-top: 10px;
     }
 
@@ -146,25 +156,30 @@ a:hover{
     }
 
     .card{
-        padding: 20px;
-        margin: 20px;
-        width: 200px;
+        padding: 0px;
+        /* margin: 20px; */
+        margin-left:20px;
+        width: 320px;
         position: relative;
     }
     
     .card p{
-        margin-top: 40px;
+        margin-top: 10px;
+        padding: 10px;
     }
     
+    .card h2{
+        padding: 10px;
+    }
     .card img{
-        margin: 10px 0px 0px ;
-        right: 100px;
+        margin: 10px 0;
+        right: 10px;
         top: 1px;
     }
 
     .clip{
-        top: 200px;
-        left: 170px;
+        top: 250px;
+        left: 120px;
     }
 
     .footer-container{
@@ -172,34 +187,50 @@ a:hover{
     }
 
     .footer-container h3{
-        margin: 0px 30px 5px 100px;
+        margin: 0px 30px 10px 100px;
+    }
+
+    a{
+        padding: 0;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+
+    a:hover{
+        color:#000; 
     }
 }
 
 @media screen and (min-width:501px) and (max-width:768px){
 
-    .weather-info{
-        width: 450px;
+    body{
+        margin: 0px;
+        width: 100%;
     }
-    .form-group{
-        flex-direction: column;
+
+    .weather-info{
+        width: 730px;
+        margin: 20px;
+        padding: 0px;
     }
 
     .form-group{
+        flex-direction: column;
         display: flex;
         /* justify-content: space-evenly; */
         width: 100%;
     }
     
     .form-group input{
-        width: 430px;
-        margin-left:0px;
+        width: 700px;
+        margin-left:10px;
+        margin-top: 20px;
     }
     
     .form-group button{
-        margin-left: 0px;
+        width: 710px;
+        margin-left:10px;
         margin-top: 10px;
-        width: 440px;
     }
 
     .container{
@@ -207,25 +238,30 @@ a:hover{
     }
 
     .card{
-        padding: 20px;
-        margin: 10px 0;
-        width: 400px;
+        padding: 0px;
+        /* margin: 20px; */
+        margin-left:20px;
+        width: 700px;
         position: relative;
     }
     
     .card p{
-        margin-top: 40px;
+        margin-top: 10px;
+        padding: 10px;
     }
     
+    .card h2{
+        padding: 10px;
+    }
     .card img{
-        margin: 10px 0px 0px ;
-        right: 20px;
+        margin: 10px 0;
+        right: 10px;
         top: 1px;
     }
 
     .clip{
-        top: 200px;
-        left: 250px;
+        top: 300px;
+        left: 300px;
     }
 
     .footer-container{
@@ -233,10 +269,19 @@ a:hover{
     }
 
     .footer-container h3{
-        margin: 0px 180px 5px;
-    }  
+        text-align: center;
+        margin-left: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
     a{
-        text-align: center;
+        padding: 0;
+       text-align: center;
+       margin-top: 20px;
+    }
+
+    a:hover{
+        color:#000; 
     }
 }

@@ -13,7 +13,7 @@ export const ApiProvider = ({children})=>{
         setLoading(true)
         setTimeout(() => {
           setLoading(false)
-          }, 5000);
+          }, 2000);
         },[])
         
         const textHandler = (e)=>{
@@ -38,7 +38,7 @@ export const ApiProvider = ({children})=>{
           setBarLoading(true)
           setTimeout(() => {
             setBarLoading(false)
-          }, 5000);
+          }, 2000);
           setText("");
       }
     }

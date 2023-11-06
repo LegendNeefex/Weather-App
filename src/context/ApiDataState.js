@@ -20,13 +20,13 @@ export const ApiProvider = ({children})=>{
           setText(e.target.value);
         }
     
-    const imageStyle = {
-      height: "350px",
-      width: "600px",
-      Backgroundimage: "url('https://www.pexels.com/photo/clouds-and-blue-sky-3783385/')",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat",
-    }
+    // const imageStyle = {
+    //   height: "350px",
+    //   width: "600px",
+    //   backgroundSize: "cover",
+    //   backgroundImage: "url('https://www.pexels.com/photo/landscape-photography-of-green-mountains-450052/')",
+    //   backgroundRepeat: "no-repeat",
+    // }
     const submitHandler = (e)=>{
       if (text === "") {
         e.preventDefault();
@@ -97,7 +97,7 @@ export const ApiProvider = ({children})=>{
     loading,
     ClipLoader,
     BarLoader,
-    imageStyle,
+    // imageStyle,
     text,
 
   }
